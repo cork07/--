@@ -6,6 +6,7 @@
 h1{
 font-family:"Yu GOthic","游ゴシック",sans-serif;
 }
+
 .container {
   max-width: 600px;
   margin: 0 auto;
@@ -39,17 +40,28 @@ background-color: #2563eb;
 <input type="text" id="leader" placeholder="検索したいリーダー">
 <button onclick="search()">検索</button>
 </div>
-<div id="result">ここに結果が表示されます</div>
+<div id="result">対戦動画の検索結果が表示されます</div>
+<p>※左側に表示されるリーダーをヨークスが使用します</p>
+<p>op16赤エースは、「新赤エース」と検索してください</p>
+<p>op15黄ルフィは、「空島ルフィ」と検索してください</p>
 </div>
 </body>
 
 <script>
 const videos = [
+{title:"黒黄ティーチvs新赤エース 2026.5.8",
+ leader1:"黒黄ティーチ",leader2:"新赤エース",
+ url:"https://youtu.be/gwL5HZDaYlQ?si=DGAWPComSJmQ0epb"
+},
+{title:"黒ヤマトvs新赤エース 2026.5.8",
+ leader1:"黒ヤマト",leader2:"新赤エース",
+ url:"https://youtu.be/fb4QAiR2rRw?si=OcqnD_K2IBMKgFr1"
+},
 {title:"紫エネルvs空島ルフィ 2026.5.6",
 leader1:"紫エネル",leader2:"空島ルフィ",
  url:"https://youtu.be/rRWVyADW7WM?si=9JIxccdx_RnxL4ag"},
-{title:"赤エースop16vs紫エネル 2026.5.6",
-leader1:"赤エースop16",leader2:"紫エネル",
+{title:"新赤エースvs紫エネル 2026.5.6",
+leader1:"新赤エース",leader2:"紫エネル",
  url:"https://youtu.be/FTmdJq8Ks4E?si=qtbOgwukj90D3Wa7"}
 ]
 
